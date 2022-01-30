@@ -23,5 +23,6 @@ async def on_message(message):
 async def on_member_join(member):
     channel = discord.utils.get(client.get_all_channels(),id = config.channelid)
     await channel.send(content = f"Welcome {member.mention}!")
+    
 
 client.run(config.TOKEN)
